@@ -27,7 +27,7 @@
                 <li><a href="/basica" target="_blank"> Web básica</a></li>
                 <li><a href="/redireccion">Redirección</a></li>
                 <li><a href="/carpeta/archivo-carpeta">Archivo dentro de carpeta</a></li>
-                <li><a href="https://lacasadelamoda.es/" target="_blank">Más información</a></li>
+                <li><a href="https://carlos.sanchezdonate.com/data-nosnippet/" target="_blank">Más información</a></li>
           </ul>
           <div class="cerrar elemento">X</div>
         </nav>
