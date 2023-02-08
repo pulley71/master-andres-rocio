@@ -1,1 +1,1 @@
-<h1>Esta página no existe y esta es una redirección 404 esto es una prueba MÁSSS</h1>
+<h1>Esta página no existe y esto es una redirección 404</h1> 

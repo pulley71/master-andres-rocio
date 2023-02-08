@@ -1,10 +1,14 @@
 <?php
 //include_once 'header.php';
 get_header();
+/* Template name: dinero */
+
 ?>
 
 
 <div class="generico">
+
+ <div clas=""> Precios ultra rebajados </div>
 
     <h1> 
         <?php the_title(); ?>
@@ -21,4 +25,9 @@ get_header();
 <?php
 //include_once 'footer.php';
 get_footer();
+<<<<<<< Updated upstream
 ?>
+=======
+?>
+
+>>>>>>> Stashed changes
