@@ -4,3 +4,266 @@ Author: Alumno Master Seo Técnico
 Descripcion: Tema personalizado alumno
 Version: 1.0
 */
+/* @import 'import.css'; */
+:root{
+    --verde: rgb(66 229 66);
+    --ancho: max(80%, 1225px);
+    --univ: 8px;
+    --mitaddeancho: calc(var(--ancho) / 2);
+    --lila: #a90fa9e3;
+    /*background: #e0cae8;*/
+}
+nav>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    width: var(--ancho);
+    background: white;
+    margin: 0px;
+    top: 0;
+    height: 50px;
+    padding: 0;
+}
+.h1small {
+    position: static;
+    top: 16px
+}
+.cerrar.elemento {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: red;
+    padding: 12px;
+    border-radius: 100%;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+body {
+    margin-top: 70px;
+    margin-right: 12px;
+    font-family: 'Catamaran', sans-serif;
+}
+.cm {
+    background: burlywood;
+    width: 10cm;
+    height: 10cm;
+}
+.mm {
+    background: lime;
+    width: 100mm;
+    height: 100mm;
+}
+.in {
+    background: red;
+    width: 3.94in;
+    height: 3.94in;
+}
+.px {
+    /* Aquí has usado una variable que no has definido previamente, el único color que has puesto en root es el verde,
+    por lo que es el único que puedes llamar después por medio de var(--) */
+    background: var(--lila);
+    width: var(--mitaddeancho);
+    height: 378px;
+}
+.pt {
+    background: chocolate;
+    width: 288pt;
+    height: 288pt;
+}
+.pc {
+    background: violet;
+    width: 24pc;
+    height: 24pc;
+}
+.absolutas {
+    display: flex;
+    flex-wrap: wrap;
+}
+.em {
+    background: bisque;
+    width: 23em;
+    height: 23em;
+}
+.rem {
+    width: 23rem;
+    height: 23rem;
+    background: yellow;
+}
+.vh {
+    background: orange;
+    width: 38vh;
+    height: 38vh;
+}
+.vw {
+    background: var(--verde);
+    width: 27vw;
+    height: 27vw;
+}
+.porcentaje {
+    background: cadetblue;
+    width: 28%;
+    height: 28%;
+}
+
+nav>ul {
+    background: #cad75e;
+    top: 0;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-right: 15px;
+    position: fixed;
+}
+
+.doscolumnas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+div#imagenfalsa {
+    height: 387px;
+    width: 849px;
+    background-color: blue;
+    background-image: url(/imagenes/logos.png);
+    margin: 80px auto;
+    padding: 45px;
+    /* background-attachment: fixed; */
+    background-size: 650px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    border: 50px solid var(--verde);
+}
+.carlossanchez {
+    background-image: url(/imagenes/logos.png);
+    background-size: 2em;
+    background-repeat: no-repeat;
+    padding-left: 2.2em;
+    background-position: inherit;
+}
+a[href^="http:"] {
+    padding-right: 1.5em;
+    background-image: url(/imagen/logos.png);
+    z-index: 3;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: red;
+}
+a[target="_blank"]:not(a[href^="http:"]) {
+    color: rgb(37, 204, 62);
+}
+img {
+    max-width: 100%;
+}
+/* Responsive */
+@media all and (max-width: 700px){
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    nav>ul li {
+        margin: 6px 0px;
+    }
+}
+@media all and (min-width: 2200px)
+{
+    * {
+        max-width: 2200px;
+        margin: auto;
+    }
+}
+element.style {
+    margin: auto;
+    width: calc(100% - 40px);
+}
+p.intro.loren {
+    margin: auto;
+    width: calc(100% - 40px);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+p.max-width {
+    max-width: 250px;
+}
+h2 {
+    background: var(--rosa);
+}
+h1.h1mayorcito {
+    background: var(--rosa);
+}
+h1 {
+    background: var(--rosa);
+}
+address.intro {
+    background: var(--suave);
+}
+p.intro {
+    background: yellow;
+    color: black;
+}
+.intro {
+    background: blue;
+    color: white;
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.intro {
+    background: var(--verde);
+}
+.intro.master {
+    font-size: 24px;
+}
+.intro.jueves {
+    font-family: fantasy;
+}
+.intro div {
+    filter: blur(1px);
+}
+div .intro {
+    text-align: right;
+}
+.intro, tablita, th {
+    font-weight: 800;
+}
+.herencias > p {
+    text-align: center;
+}
+.herencias p {
+    background: aqua;
+}
+.efectito {
+    margin: auto;
+    width: 230px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: chocolate;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+p#demo {
+    margin-bottom: 80px;
+}
+button#pececillo {
+    margin-bottom: 80px;
+}
+p#saludos {
+    margin-bottom: 150px;
+}
+p#hecho1 {
+    margin-bottom: 80px;
+}
+h1 {
+    margin-bottom: 33px;
+}
