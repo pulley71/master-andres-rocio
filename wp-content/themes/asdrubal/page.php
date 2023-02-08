@@ -10,6 +10,8 @@ get_header();
         <?php the_title(); ?>
     <h1>
 
+    <h2>prueba merge</h2>
+
 <section id="contenido">
     <?php 
     echo the_content();
