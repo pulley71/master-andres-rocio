@@ -26,3 +26,5 @@ get_header();
 //include_once 'footer.php';
 get_footer();
 ?>
+
+tu jato loco
