@@ -25,4 +25,9 @@ get_header();
 <?php
 //include_once 'footer.php';
 get_footer();
+<<<<<<< Updated upstream
 ?>
+=======
+?>
+
+>>>>>>> Stashed changes
