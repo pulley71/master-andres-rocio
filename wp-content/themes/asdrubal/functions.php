@@ -1,6 +1,3 @@
 <?php
-
-function ctas(){
-    echo 'Espero haberte sido de ayuda';
-}
+$plantillas = _DIR_ .'/plantillas/';
 ?>

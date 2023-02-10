@@ -6,7 +6,7 @@ get_header();
 
 <div class="generico">
 
-    <h1> 
+    <h1>
         <?php the_title();?>
     <h1>
 
@@ -15,6 +15,11 @@ get_header();
     echo the_content();
     ?>
 </section>
+
+<?php
+// include $plantillas .'cuatropost.php';
+include 'plantillas/cuatropost.php' //(también puede usarse sin la variable $)
+?>
 
 </div>
 
