@@ -1,4 +1,4 @@
-<section id="trespostsdisplay" class= "box cards">
+<section id="trespostsdisplay" class= "flexcenter">
     
    <?php
     $args = array(

@@ -22,12 +22,12 @@
         <nav>
             <ul>
                 <li><a href="/">Inicio</a></li>
-                <li><a href="/sobre-mi">Sobre mi</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-                <li><a href="/nuevo">New</a></li>
-                <li><a href="/basica" target="_blank"> Web básica</a></li>
-                <li><a href="/redireccion">Redirección</a></li>
-                <li><a href="/carpeta/archivo-carpeta">Archivo dentro de carpeta</a></li>
+                <li><a href="/sobre-mi/">Sobre mi</a></li>
+                <li><a href="/contacto/">Contacto</a></li>
+                <li><a href="/nuevo/">New</a></li>
+                <li><a href="/basica/" target="_blank"> Web básica</a></li>
+                <li><a href="/redireccion/">Redirección</a></li>
+                <li><a href="/carpeta/archivo-carpeta/">Archivo dentro de carpeta</a></li>
                 <li><a href="https://carlos.sanchezdonate.com/data-nosnippet/" target="_blank">Más información</a></li>
           </ul>
           <div class="cerrar elemento">X</div>

@@ -41,6 +41,7 @@ nav>ul {
     font-weight: 800;
     cursor: pointer;
 }
+
 body {
     margin-top: 70px;
     margin-right: 12px;
@@ -161,6 +162,7 @@ a[target="_blank"]:not(a[href^="http:"]) {
 img {
     max-width: 100%;
 }
+
 /* Responsive */
 @media all and (max-width: 700px){
     nav>ul {
@@ -266,4 +268,30 @@ p#hecho1 {
 }
 h1 {
     margin-bottom: 33px;
+}
+.flexcenter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.post-card a {
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    background: lightblue;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.post-card a .post-name{
+    text-decoration: auto;
+    background: green;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    min-height: 2em;
 }
