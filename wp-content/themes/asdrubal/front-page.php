@@ -17,8 +17,9 @@ get_header();
 </section>
 
 <?php
-// include $plantillas .'cuatropost.php';
-include 'plantillas/cuatropost.php' //(también puede usarse sin la variable $)
+// ¡¡en la consola NO se ha creado el duplicado de la home!!
+include $plantillas .'/display-post/card-post.php';
+// include 'plantillas/cuatropost.php';  (también puede usarse este otro include)
 ?>
 
 </div>

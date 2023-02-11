@@ -3,7 +3,6 @@
 get_header();
 ?>
 
-
 <div class="generico">
 
     <h1> 
