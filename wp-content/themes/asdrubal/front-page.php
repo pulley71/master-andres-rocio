@@ -18,6 +18,7 @@ get_header();
 
 <?php
 // ¡¡en la consola NO se ha creado el duplicado de la home!!
+// en la home no sale el footer si no cambio la llamada así: include $plantillas .'cuatropost.php';
 include $plantillas .'/display-post/card-post.php';
 // include 'plantillas/cuatropost.php';  (también puede usarse este otro include)
 ?>

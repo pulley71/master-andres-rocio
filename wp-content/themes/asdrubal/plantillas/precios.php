@@ -8,7 +8,7 @@ get_header();
 
 <div class="generico">
 
- <div clas=""> Precios ultra rebajados </div>
+<!-- <div clas=""> Precios ultra rebajados </div> -->
 
     <h1> 
         <?php the_title(); ?>
