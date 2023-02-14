@@ -14,6 +14,14 @@ get_header();
     <?php 
     echo the_content();
     ?>
+    <?php 
+    if(get_field('precio')){
+        ?>
+     <div class= "precio"> <?php the_field( 'precio' ); ?>€</div>
+     <?php 
+    }
+    else{;}
+    ?>
 </section>
 
 </div>
