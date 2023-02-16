@@ -6,8 +6,15 @@ $url_sin_string = $protocol . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER["R
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta charset="UTF-8">
+
+<?php $metarobots_checked_values = get_field( 'metarobots',$term ); 
+if ( $metarobots_checked_values ) : ?>
+	
+        <meta name= "robots" content="<?php the_field( 'metarobots',$term );
+	?>">
+<?php endif; ?>
     
-    <meta name= "robots" content="" >
+
 
     <?php the_field( 'custom_meta', $term ); ?>
 
@@ -83,9 +90,17 @@ $url_sin_string = $protocol . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER["R
     
     
 
-    <meta property="og:image" content="<?php the_field( 'og_image' ); ?>">
+    <meta property="og:image" content="
+    <?php if(get_field('og:_image',$term)){
+        the_field('og:_image',$term);
+    } 
+    else the_field( 'og_image_brand',$term );{
+    }    
+    ?>">
+
+    <meta property="og:image:secure_url" content="<?php the_field( 'og_image' ); ?>">
     <meta property="twitter:image" content="<?php the_field( 'og_image' ); ?>">
-    <meta property="og:image:alt" content="<?php the_field( 'og_image' ); ?>">
+    <meta property="og:image:alt" content="<?php the_field( 'title',$term ); ?>">
 
     <meta property="og:type" content="website">
     <meta property="twitter:card" content="sumary_large_image">
@@ -101,4 +116,4 @@ $url_sin_string = $protocol . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER["R
     <meta name="robots" content="index, max-snippet:-1" caracteres que se quiera>
     <meta name="robots" content="index, max-snippet: 0" igual que nosnippet>
     -->
-    <meta name="rating" content="adult">
+   <!-- <meta name="rating" content="adult"-->
