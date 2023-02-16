@@ -1,5 +1,7 @@
 <?php
-$term= get_queried_objetct();
+$term= get_queried_object();
+$protocol = isset ($_SERVER["HTTPS"]) ? 'https' : 'http';
+$url_sin_string = $protocol . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER["REQUEST_URI"], '?');
 ?>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,25 +12,80 @@ $term= get_queried_objetct();
     <?php the_field( 'custom_meta', $term ); ?>
 
     <meta http-equiv="" content="" />
-    <title></title>
-    <meta property="og:title" content="">
-    <meta property="twitter:title" content="">
+    <title><?php the_field( 'title',$term ); ?></title>
+    <meta property="og:title" content="
+    
+    <?php if(get_field('og_title',$term)){
+        the_field('og_title',$term);
+    } 
+    else the_field( 'title',$term );{
+    } 
+     
+    ?>
+    ">
+    
+    
+    <meta property="twitter:title" content="
+   
+   <?php if(get_field('twitter_title',$term)){
+        the_field('twitter_title',$term);
+    } 
+    elseif(get_field('og_title',$term)){
+        the_field('og_title',$term);
+    } 
+    else the_field( 'title',$term );{
+    }    
+    ?>">
 
-    <meta name= "description" content="" >
+    <meta name= "description" content="<?php the_field( 'description',$term ); ?>" >
 
     <meta name="robots" content="">
     <meta name="bingbot" content="">
 
+    <link rel= "canonical" href="
+    <?php if(get_field('canonical',$term)){
+        the_field('canonical',$term);
+    } 
+    else echo $url_sin_string; 
+    ?>">
+    
+    <meta property="og:url" content="<?php if(get_field('canonical',$term)){
+        the_field('canonical',$term);
+    } 
+    else echo $url_sin_string; 
+    ?>">
+    <meta property="twitter:url" content="<?php if(get_field('canonical',$term)){
+        the_field('canonical',$term);
+    } 
+    else echo $url_sin_string; 
+    ?>">
 
-    <meta property="og:url" content="">
-    <meta property="twitter:url" content="">
+    <meta property="og:description" content="
+    
+   <?php if(get_field('og_description',$term)){
+        the_field('og_description',$term);
+    } 
+    
+    else the_field( 'description',$term );{
+    }    
+    ?>">
+    
+    <meta property="twitter:description" content="
+    <?php if(get_field('twitter_description',$term)){
+        the_field('twitter_description',$term);
+    } 
+    elseif(get_field('og_description',$term)){
+        the_field('og_description',$term);
+    } 
+    else the_field( 'description',$term );{
+    }    
+    ?>">
+    
+    
 
-    <meta property="og:description" content="">
-    <meta property="twitter:description" content="">
-
-    <meta property="og:image" content="">
-    <meta property="twitter:image" content="">
-    <meta property="og:image:alt" content="">
+    <meta property="og:image" content="<?php the_field( 'og_image' ); ?>">
+    <meta property="twitter:image" content="<?php the_field( 'og_image' ); ?>">
+    <meta property="og:image:alt" content="<?php the_field( 'og_image' ); ?>">
 
     <meta property="og:type" content="website">
     <meta property="twitter:card" content="sumary_large_image">
