@@ -301,4 +301,9 @@ h1 {
     min-height: 2em;
 }
 
-
+.colorh1 {
+    color: rgb(244, 10, 10);
+}
+.headingexample::after{
+    content: 'maravilloso';
+}

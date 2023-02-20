@@ -6,8 +6,8 @@ get_header();
 
 <div class="generico">
 
-    <h1> 
-        <?php the_title(); ?>
+    <h1 class="headingexample"> 
+    <div class= "colorh1">Esto es un heading 1</div> para mi web
     <h1>
 
     <h2>prueba merge</h2>

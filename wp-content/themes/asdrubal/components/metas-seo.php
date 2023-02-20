@@ -90,16 +90,10 @@ if ( $metarobots_checked_values ) : ?>
     
     
 
-    <meta property="og:image" content="
-    <?php if(get_field('og:_image',$term)){
-        the_field('og:_image',$term);
-    } 
-    else the_field( 'og_image_brand',$term );{
-    }    
-    ?>">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(). '/screenshot.png'; ?>">
 
-    <meta property="og:image:secure_url" content="<?php the_field( 'og_image' ); ?>">
-    <meta property="twitter:image" content="<?php the_field( 'og_image' ); ?>">
+    <meta property="og:image:secure_url" content="<?php echo get_template_directory_uri(). '/screenshot.png'; ?>">
+    <meta property="twitter:image" content="<?php echo get_template_directory_uri(); '/screenshot.png'; ?>">
     <meta property="og:image:alt" content="<?php the_field( 'title',$term ); ?>">
 
     <meta property="og:type" content="website">
