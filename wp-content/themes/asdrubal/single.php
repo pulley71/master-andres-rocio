@@ -6,6 +6,8 @@ get_header();
 
 <div class="generico">
 
+<img height="300px" class="aspectofoto" src="<?php the_field( 'imagenarticulos' ); ?>" />
+
     <h1> 
         <?php the_title(); ?>
     <h1>

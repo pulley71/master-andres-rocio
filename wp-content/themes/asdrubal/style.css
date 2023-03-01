@@ -204,6 +204,7 @@ h1.h1mayorcito {
 h1 {
     background: var(--rosa);
 }
+
 address.intro {
     background: var(--suave);
 }
@@ -276,7 +277,7 @@ h1 {
 }
 
 .post-card {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .post-card a {
@@ -300,10 +301,33 @@ h1 {
     width: 100%;
     min-height: 2em;
 }
+img.aspectofoto {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
 
 .colorh1 {
     color: rgb(244, 10, 10);
 }
 .headingexample::after{
     content: 'maravilloso';
+
+}.generico {
+        height: 475px;
+    
 }
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: stretch;
+    justify-content: space-between;
+}
+  
+.fotoback{
+    background-image:url("/wp-content/uploads/2023/02/Redes-sociales.jpg");
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    }

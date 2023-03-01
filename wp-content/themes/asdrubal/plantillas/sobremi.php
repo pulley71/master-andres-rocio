@@ -5,24 +5,23 @@ get_header();
 
 ?>
 
-
-<div class="generico">
-
-
+<div class="fotoback"></div>
+    <div>
     <h1> 
         <?php the_title(); ?>
     <h1>
-
+    
 <section id="contenido">
     <?php 
     echo the_content();
     ?>
 </section>
+
+</div>
 <?php 
     include $plantillas. 'tresposts.php';
    
     ?>
-</div>
 
 <?php
 //include_once 'footer.php';
